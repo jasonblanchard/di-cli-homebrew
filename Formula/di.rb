@@ -2,20 +2,20 @@
 class Di < Formula
   desc ""
   homepage ""
-  version "0.0.6"
+  version "0.0.7"
   bottle :unneeded
 
   if OS.mac?
-    url "http://github.mycompany.com/foo/bar/releases/v0.0.6/di-cli_0.0.6_Darwin_x86_64.tar.gz"
-    sha256 "e1e967e088f009f3962ef66fbe3fb22656f8370e67ab81596d87f50abb6e0c62"
+    url "http://github.mycompany.com/foo/bar/releases/v0.0.7/di-cli_0.0.7_Darwin_x86_64.tar.gz"
+    sha256 "bcc3dece8e419d92ce5174010d0ab0645b573571a0ac967d265a90121ba0dee4"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "http://github.mycompany.com/foo/bar/releases/v0.0.6/di-cli_0.0.6_Linux_x86_64.tar.gz"
-      sha256 "23fa973278dc1d903754b5bfa619269986feb253e3017f1459d41519da251679"
+      url "http://github.mycompany.com/foo/bar/releases/v0.0.7/di-cli_0.0.7_Linux_x86_64.tar.gz"
+      sha256 "41a5bd554fb068db8961734944b13d81754b5ab0f82e1f0ba3d9ab087fe716c0"
     end
   end
 
   def install
-    bin.install "di-cli"
+    bin.install "di"
   end
 end
