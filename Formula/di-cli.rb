@@ -2,17 +2,16 @@
 class DiCli < Formula
   desc ""
   homepage ""
-  version "0.0.11"
+  version "0.0.12"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jasonblanchard/di-cli/releases/download/v0.0.11/di-cli_0.0.11_Darwin_x86_64.tar.gz"
-    sha256 "3c82489664eacb1d9190a63a55852f4c49167311822ba1905f4d17bcde8df170"
-  elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/jasonblanchard/di-cli/releases/download/v0.0.11/di-cli_0.0.11_Linux_x86_64.tar.gz"
-      sha256 "5d89465dcdcfd358542db8bf07c36f809a04d2a5e6b06dbe8490e10406756910"
-    end
+    url "https://github.com/jasonblanchard/di-cli/releases/download/v0.0.12/di-cli_0.0.12_Darwin_x86_64.tar.gz"
+    sha256 "514c57146d6730d751be31b77a0c20788b13c120aadb4f06974a7bcca990c779"
+  end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/jasonblanchard/di-cli/releases/download/v0.0.12/di-cli_0.0.12_Linux_x86_64.tar.gz"
+    sha256 "d358d20441a6011b3f6e4ab4b5fd0c3beeba2f35e7b3e6d1b525d6989cefcc13"
   end
 
   def install
